@@ -1,0 +1,11 @@
+# кодировка глобальная
+AddDefaultCharset UTF-8
+# 
+# mode revrite
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URL} !^/.*
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^. index.php
